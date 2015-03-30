@@ -1,0 +1,208 @@
+20:55:07.258 INFO  - Processing command line option -hwspec F:/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+21:21:24.469 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:21:24.569 INFO  - PS initialization will be done as it is not done before. 
+21:21:24.569 INFO  - Running PS initialization.... 
+21:21:26.041 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    AP transaction timeout: ACK = 0x01, expected=0x02)
+    Error Address = 0xf8006154
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+21:21:51.955 INFO  - Project mem_test_bsp was a BSP project. Please update references. 
+21:21:51.957 ERROR - SDK has detected that project mem_test_bsp has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+21:22:39.072 ERROR - Unable to determine the referenced BSP for application project mem_test. Please make sure that the project specified in the launch configuration has a referenced BSP project. 
+21:29:46.606 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+21:32:57.574 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+21:33:47.514 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+21:34:01.033 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:35:20.233 INFO  - Processing command line option -hwspec F:/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+21:35:22.130 INFO  - The hardware specification for project 'hw_platform_0' is different from F:/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+21:35:22.166 INFO  - Copied contents of F:/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+21:35:25.128 INFO  - Copied contents of F:\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+21:35:25.132 INFO  - Copied contents of F:\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+21:35:25.146 INFO  - Copied contents of F:\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+21:35:25.152 INFO  - Copied contents of F:\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+21:35:25.157 INFO  - Copied contents of F:\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+21:35:25.823 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+21:35:28.582 INFO  - Updating hardware inferred compiler options for mem_test. 
+21:35:29.334 INFO  - Updating hardware inferred compiler options for msm_test. 
+21:35:29.478 INFO  - Clearing existing target manager status. 
+21:41:46.392 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:41:46.492 INFO  - PS initialization will be done as it is not done before. 
+21:41:46.492 INFO  - Running PS initialization.... 
+21:41:48.007 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    AP transaction timeout: ACK = 0x01, expected=0x02)
+    Error Address = 0xf800603c
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+21:44:35.605 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+21:47:40.338 ERROR - Port COM5 is already in use. 
+21:47:40.702 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+22:09:57.627 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+22:10:45.038 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+22:11:05.691 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+22:11:49.743 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+22:12:34.414 ERROR - SDK has detected that project hw_platform_0 has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+22:12:52.831 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/hw_platform_0' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+
+22:15:17.620 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+22:15:17.621 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+22:16:49.882 INFO  - Processing command line option -hwspec F:/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+22:19:11.603 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+22:19:36.137 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:19:36.237 INFO  - PS initialization will be done as it is not done before. 
+22:19:36.238 INFO  - Running PS initialization.... 
+22:19:37.190 INFO  - ps7_init is completed. 
+22:19:37.289 INFO  - PS Initialization is complete. 
+22:20:29.549 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:20:37.534 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:20:49.120 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:21:34.755 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:21:49.799 ERROR - Port COM5 is already in use. 
+22:21:49.932 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+22:21:50.214 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Invalid Target ID
+    Target '64' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+22:22:07.840 ERROR - Port COM5 is already in use. 
+22:22:08.185 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:22:08.285 INFO  - PS initialization will be done as it is not done before. 
+22:22:08.285 INFO  - Running PS initialization.... 
+22:22:09.963 INFO  - ps7_init is completed. 
+22:22:10.063 INFO  - PS Initialization is complete. 
+22:22:12.874 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+
+    AP transaction error (DP CTRL_STAT=0xf0000021)
+    Error Address = 0x00000000, Size = 0x00000004
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+22:23:07.858 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+22:23:07.863 ERROR - Timeout occured while waiting to get reply for command "xstop 64" 
+22:24:30.297 ERROR - Port COM5 is already in use. 
+22:24:30.676 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:26:45.771 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:26:57.018 ERROR - Port COM5 is already in use. 
+22:26:57.379 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+22:27:11.308 ERROR - Port COM5 is already in use. 
+22:27:11.673 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:27:11.773 INFO  - PS initialization will be done as it is not done before. 
+22:27:11.773 INFO  - Running PS initialization.... 
+22:27:12.957 INFO  - ps7_init is completed. 
+22:27:13.057 INFO  - PS Initialization is complete. 
+22:28:19.359 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:30:01.409 ERROR - Port COM5 is already in use. 
+22:30:01.850 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:30:01.950 INFO  - PS initialization will be done as it is not done before. 
+22:30:01.951 INFO  - Running PS initialization.... 
+22:30:02.679 INFO  - ps7_init is completed. 
+22:30:02.779 INFO  - PS Initialization is complete. 
+22:30:40.370 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:31:54.935 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:31:55.035 INFO  - PS initialization will be done as it is not done before. 
+22:31:55.035 INFO  - Running PS initialization.... 
+22:31:55.563 INFO  - ps7_init is completed. 
+22:31:55.663 INFO  - PS Initialization is complete. 
+22:34:32.181 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:36:08.688 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:36:37.854 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:40:17.149 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

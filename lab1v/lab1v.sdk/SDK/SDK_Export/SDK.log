@@ -1,0 +1,40 @@
+23:52:59.639 INFO  - Processing command line option -hwspec E:/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml. 
+00:00:49.140 INFO  - Processing command line option -hwspec E:/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml. 
+00:00:50.084 INFO  - The hardware specification for project 'hw_platform_0' is different from E:/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml. 
+00:00:50.215 INFO  - Copied contents of E:/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+00:00:50.365 INFO  - Copied contents of E:\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+00:00:50.368 INFO  - Copied contents of E:\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+00:00:50.377 INFO  - Copied contents of E:\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+00:00:50.380 INFO  - Copied contents of E:\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+00:00:50.383 INFO  - Copied contents of E:\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+00:00:50.886 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+00:00:52.779 INFO  - Clearing existing target manager status. 
+00:01:00.935 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+00:16:12.648 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:16:12.748 INFO  - PS initialization will be done as it is not done before. 
+00:16:12.748 INFO  - Running PS initialization.... 
+00:16:13.838 INFO  - ps7_init is completed. 
+00:16:13.938 INFO  - PS Initialization is complete. 
+00:16:50.546 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+00:17:47.625 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:17:47.725 INFO  - PS initialization will be done as it is not done before. 
+00:17:47.739 INFO  - Running PS initialization.... 
+00:17:48.136 INFO  - ps7_init is completed. 
+00:17:48.236 INFO  - PS Initialization is complete. 
+00:22:36.358 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:22:36.458 INFO  - PS initialization will be done as it is not done before. 
+00:22:36.458 INFO  - Running PS initialization.... 
+00:22:38.308 INFO  - ps7_init is completed. 
+00:22:38.408 INFO  - PS Initialization is complete. 
+00:23:37.544 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:23:37.644 INFO  - PS initialization will be done as it is not done before. 
+00:23:37.645 INFO  - Running PS initialization.... 
+00:23:39.402 INFO  - ps7_init is completed. 
+00:23:39.502 INFO  - PS Initialization is complete. 
+00:24:24.694 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:26:08.684 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:26:08.784 INFO  - PS initialization will be done as it is not done before. 
+00:26:08.785 INFO  - Running PS initialization.... 
+00:26:09.816 INFO  - ps7_init is completed. 
+00:26:09.916 INFO  - PS Initialization is complete. 
+00:26:21.806 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

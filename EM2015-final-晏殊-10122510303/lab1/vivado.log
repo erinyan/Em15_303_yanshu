@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2013.4
+# SW Build 353583 on Mon Dec  9 17:38:55 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Sat Jun 27 15:42:35 2015
+# Process ID: 7440
+# Log file: F:/beacon/vivado/lab1/vivado.log
+# Journal file: F:/beacon/vivado/lab1\vivado.jou
+#-----------------------------------------------------------
+Attempting to get a license: Implementation
+WARNING: [Common 17-301] Failed to get a license: Implementation
+WARNING: [Vivado 15-19] WARNING: No 'Implementation' license found. This message may be safely ignored if a Vivado WebPACK or device-locked license, common for board kits, will be used during implementation.
+
+Attempting to get a license: Synthesis
+WARNING: [Common 17-301] Failed to get a license: Synthesis
+Loading parts and site information from F:/beacon/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [F:/beacon/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [F:/beacon/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+open_project {F:\beacon\vivado\lab1\lab1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/beacon/Xilinx/Vivado/2013.4/data/ip'.
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 655.531 ; gain = 68.551
+WARNING: [Vivado 15-19] WARNING: No 'Implementation' license found. This message may be safely ignored if a Vivado WebPACK or device-locked license, common for board kits, will be used during implementation.
+
+launch_sdk -workspace F:/beacon/vivado/lab1/lab1.sdk/SDK/SDK_Export -hwspec F:/beacon/vivado/lab1/lab1.sdk/SDK/SDK_Export/hw/design_1.xml
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/beacon/vivado/lab1/lab1.sdk/SDK/SDK_Export -hwspec F:/beacon/vivado/lab1/lab1.sdk/SDK/SDK_Export/hw/design_1.xml
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 27 15:49:56 2015...

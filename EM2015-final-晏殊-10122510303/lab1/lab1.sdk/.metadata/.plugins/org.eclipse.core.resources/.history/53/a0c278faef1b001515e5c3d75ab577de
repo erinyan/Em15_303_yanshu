@@ -1,0 +1,112 @@
+#include "xparameters.h"
+#include "XScuTimer.h"
+#include "xgpio.h"
+#include "xutil.h"
+  
+
+//====================================================
+XScuTimer Timer;		/* Cortex A9 SCU Private Timer Instance */
+#define ONE_SECOND 333000000
+
+int main (void) 
+{
+
+	//----------变量定义-------------//
+	XGpio led , push; //2个GPIO  LED 和 BUTTON
+	int i ,j , psb_check;//psb_check为push的返回值
+	int n = -1;
+
+    xil_printf("-- Start of the Program --\r\n");
+
+   
+	//初始化GPIO 及 输入输出设置
+	XGpio_Initialize(&led,XPAR_DIODE_0_DEVICE_ID);
+	XGpio_SetDataDirection(&led,1,0x00000000);//led  0是输出
+
+	XGpio_Initialize(&push, XPAR_BTN_4BIT_DEVICE_ID);
+	XGpio_SetDataDirection(&push, 1, 0xffffffff);//button 1是输入
+
+    void wait_sec()
+    {
+    	for (i=0; i<100000000; i++);
+    }
+
+	while (1)
+	{
+        //按下button,得到按下哪个按钮 
+		psb_check = XGpio_DiscreteRead(&push,1);//读取btn按键的输入
+		
+		if( psb_check==1 )
+		{
+			xil_printf("= = = R-E-S-E-T = = =\r\n");
+			n = 0;
+		}
+
+        if(n==0)//(G - R)
+        {
+        	XGpio_DiscreteWrite(&led, 1, 0x00080080);
+        	for (j = 0 ; j < 12 ;j++){wait_sec();}
+        	n = n +6;
+        }
+        if(n==6)
+        {
+        	wait_sec();
+        	XGpio_DiscreteWrite(&led, 1, 0x00000080);
+        	wait_sec();
+        	XGpio_DiscreteWrite(&led, 1, 0x00080080);
+        	n++;
+        	wait_sec();
+            XGpio_DiscreteWrite(&led, 1, 0x00000080);
+        	wait_sec();
+        	XGpio_DiscreteWrite(&led, 1, 0x00080080);
+        	n++;
+        }
+        if(n==8)
+        {
+            XGpio_DiscreteWrite(&led, 1, 0x00000880);
+            wait_sec();
+            XGpio_DiscreteWrite(&led, 1, 0x00000080);
+            wait_sec();
+            n++;
+            XGpio_DiscreteWrite(&led, 1, 0x00000880);
+            wait_sec();
+            XGpio_DiscreteWrite(&led, 1, 0x00000080);
+            wait_sec();
+            n++;
+        }
+        if(n==10)
+        {
+        	XGpio_DiscreteWrite(&led, 1, 0x00800008);
+        	for (j = 0 ; j < 12 ;j++){wait_sec();}
+        	n = n +6;
+        }
+        if(n==16)
+        {
+        	wait_sec();
+        	XGpio_DiscreteWrite(&led, 1, 0x00000008);
+        	wait_sec();
+        	XGpio_DiscreteWrite(&led, 1, 0x00800008);
+        	n++;
+        	wait_sec();
+            XGpio_DiscreteWrite(&led, 1, 0x00000008);
+        	wait_sec();
+        	XGpio_DiscreteWrite(&led, 1, 0x00800008);
+        	n++;
+        }
+        if(n==18)
+        {
+        	XGpio_DiscreteWrite(&led, 1, 0x00008008);
+        	wait_sec();
+        	XGpio_DiscreteWrite(&led, 1, 0x00000008);
+        	n++;
+         	wait_sec();
+         	XGpio_DiscreteWrite(&led, 1, 0x00008008);
+          	wait_sec();
+        	XGpio_DiscreteWrite(&led, 1, 0x00000008);
+        	wait_sec();
+        	n++;
+        }
+        if(n==20){n=0;}
+	}
+}
+ 

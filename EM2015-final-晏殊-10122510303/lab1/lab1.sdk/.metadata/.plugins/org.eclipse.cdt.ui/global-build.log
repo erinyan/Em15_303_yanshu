@@ -1,0 +1,2210 @@
+16:28:37 **** Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+16:28:43 **** Clean-only build of configuration Debug for project Test ****
+make clean 
+rm -rf  ./src/lab2.o  ./src/lab2.d  Test.elf.size  Test.elf
+' '
+16:28:46 **** Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:12:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24160	   1152	  22628	  47940	   bb44	Test.elf
+'Finished building: Test.elf.size'
+' '
+16:29:33 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v1_01_a/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v1_01_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v2_04_a/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v2_04_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v1_07_a/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v1_07_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v3_01_a/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v3_01_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v1_06_a/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v1_06_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v1_02_a/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v1_02_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v1_02_a/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v1_02_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v3_12_a/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v3_12_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v1_05_a/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v1_05_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v1_03_a/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v1_03_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v1_01_a/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v1_01_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v2_04_a/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v2_04_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v1_07_a/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v1_07_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v3_01_a/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v3_01_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v1_06_a/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v1_06_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v1_02_a/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v1_02_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v1_02_a/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v1_02_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v3_12_a/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v3_12_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v1_05_a/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v1_05_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v1_03_a/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v1_03_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+16:30:15 **** Auto Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+16:36:01 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+16:46:24 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c:3:19: fatal error: xutil.h: No such file or directory
+ #include "xutil.h"
+                   ^
+compilation terminated.
+make: *** [src/lab2.o] ´íÎó 1
+16:48:26 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v1_01_a/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v1_01_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v2_04_a/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v2_04_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v1_07_a/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v1_07_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v3_01_a/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v3_01_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v1_06_a/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v1_06_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v1_02_a/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v1_02_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v1_02_a/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v1_02_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v3_12_a/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v3_12_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v1_05_a/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v1_05_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v1_03_a/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v1_03_a/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v1_01_a/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v1_01_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v2_04_a/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v2_04_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v1_07_a/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v1_07_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v3_01_a/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v3_01_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v1_06_a/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v1_06_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v1_02_a/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v1_02_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v1_02_a/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v1_02_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v3_12_a/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v3_12_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v1_05_a/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v1_05_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v1_03_a/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v1_03_a/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+16:49:04 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:12:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24224	   1152	  22628	  48004	   bb84	Test.elf
+'Finished building: Test.elf.size'
+' '
+16:50:01 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+16:51:02 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:12:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24224	   1152	  22628	  48004	   bb84	Test.elf
+'Finished building: Test.elf.size'
+' '
+16:51:13 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+16:51:23 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+16:51:32 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+16:53:18 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+16:54:45 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:12:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:12:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:12:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+../src/lab2.c:12:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+  int i, psb_check, dip_check, diode_check, find;
+         ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24024	   1152	  22628	  47804	   babc	Test.elf
+'Finished building: Test.elf.size'
+' '
+16:55:27 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+16:57:47 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:12:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:12:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:12:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24024	   1152	  22628	  47804	   babc	Test.elf
+'Finished building: Test.elf.size'
+' '
+16:58:02 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:01:55 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:12:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:12:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:12:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24024	   1152	  22628	  47804	   babc	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:02:06 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:02:46 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:12:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:12:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:12:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24024	   1152	  22628	  47804	   babc	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:03:10 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:12:39 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:25:2: warning: implicit declaration of function 'XscuTimer_LoadTimer' [-Wimplicit-function-declaration]
+  XscuTimer_LoadTimer(TimerInstancePtr, ONE_SECOND);
+  ^
+../src/lab2.c:25:22: error: 'TimerInstancePtr' undeclared (first use in this function)
+  XscuTimer_LoadTimer(TimerInstancePtr, ONE_SECOND);
+                      ^
+../src/lab2.c:25:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:25:40: error: 'ONE_SECOND' undeclared (first use in this function)
+  XscuTimer_LoadTimer(TimerInstancePtr, ONE_SECOND);
+                                        ^
+../src/lab2.c:26:2: warning: implicit declaration of function 'XscuTimer_EnableAutoReload' [-Wimplicit-function-declaration]
+  XscuTimer_EnableAutoReload(TimjerInstancePtr);
+  ^
+../src/lab2.c:26:29: error: 'TimjerInstancePtr' undeclared (first use in this function)
+  XscuTimer_EnableAutoReload(TimjerInstancePtr);
+                             ^
+../src/lab2.c:37:5: warning: implicit declaration of function 'XScuTimer_Stop' [-Wimplicit-function-declaration]
+     XScuTimer_Stop(TimerInstancePtr);
+     ^
+../src/lab2.c:12:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:12:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:12:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+make: *** [src/lab2.o] ´íÎó 1
+17:13:30 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:26:2: warning: implicit declaration of function 'XscuTimer_LoadTimer' [-Wimplicit-function-declaration]
+  XscuTimer_LoadTimer(TimerInstancePtr, ONE_SECOND*psb_check);
+  ^
+../src/lab2.c:26:22: error: 'TimerInstancePtr' undeclared (first use in this function)
+  XscuTimer_LoadTimer(TimerInstancePtr, ONE_SECOND*psb_check);
+                      ^
+../src/lab2.c:26:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:26:40: error: 'ONE_SECOND' undeclared (first use in this function)
+  XscuTimer_LoadTimer(TimerInstancePtr, ONE_SECOND*psb_check);
+                                        ^
+../src/lab2.c:27:2: warning: implicit declaration of function 'XscuTimer_EnableAutoReload' [-Wimplicit-function-declaration]
+  XscuTimer_EnableAutoReload(TimjerInstancePtr);
+  ^
+../src/lab2.c:27:29: error: 'TimjerInstancePtr' undeclared (first use in this function)
+  XscuTimer_EnableAutoReload(TimjerInstancePtr);
+                             ^
+../src/lab2.c:38:5: warning: implicit declaration of function 'XScuTimer_Stop' [-Wimplicit-function-declaration]
+     XScuTimer_Stop(TimerInstancePtr);
+     ^
+../src/lab2.c:12:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:12:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:12:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+make: *** [src/lab2.o] ´íÎó 1
+17:14:07 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:27:2: warning: implicit declaration of function 'XscuTimer_LoadTimer' [-Wimplicit-function-declaration]
+  XscuTimer_LoadTimer(TimerInstancePtr, ONE_SECOND*psb_check);
+  ^
+../src/lab2.c:27:22: error: 'TimerInstancePtr' undeclared (first use in this function)
+  XscuTimer_LoadTimer(TimerInstancePtr, ONE_SECOND*psb_check);
+                      ^
+../src/lab2.c:27:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:27:40: error: 'ONE_SECOND' undeclared (first use in this function)
+  XscuTimer_LoadTimer(TimerInstancePtr, ONE_SECOND*psb_check);
+                                        ^
+../src/lab2.c:28:2: warning: implicit declaration of function 'XscuTimer_EnableAutoReload' [-Wimplicit-function-declaration]
+  XscuTimer_EnableAutoReload(TimjerInstancePtr);
+  ^
+../src/lab2.c:28:29: error: 'TimjerInstancePtr' undeclared (first use in this function)
+  XscuTimer_EnableAutoReload(TimjerInstancePtr);
+                             ^
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+make: *** [src/lab2.o] ´íÎó 1
+17:15:22 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:27:2: warning: implicit declaration of function 'XscuTimer_LoadTimer' [-Wimplicit-function-declaration]
+  XscuTimer_LoadTimer(TimerInstancePtr, ONE_SECOND*psb_check);
+  ^
+../src/lab2.c:27:22: error: 'TimerInstancePtr' undeclared (first use in this function)
+  XscuTimer_LoadTimer(TimerInstancePtr, ONE_SECOND*psb_check);
+                      ^
+../src/lab2.c:27:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:27:40: error: 'ONE_SECOND' undeclared (first use in this function)
+  XscuTimer_LoadTimer(TimerInstancePtr, ONE_SECOND*psb_check);
+                                        ^
+../src/lab2.c:28:2: warning: implicit declaration of function 'XscuTimer_EnableAutoReload' [-Wimplicit-function-declaration]
+  XscuTimer_EnableAutoReload(TimerInstancePtr);
+  ^
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+make: *** [src/lab2.o] ´íÎó 1
+17:17:45 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:27:2: warning: implicit declaration of function 'XscuTimer_LoadTimer' [-Wimplicit-function-declaration]
+  XscuTimer_LoadTimer(TimerInstancePtr, One_SECOND*psb_check);
+  ^
+../src/lab2.c:27:22: error: 'TimerInstancePtr' undeclared (first use in this function)
+  XscuTimer_LoadTimer(TimerInstancePtr, One_SECOND*psb_check);
+                      ^
+../src/lab2.c:27:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:27:40: error: 'One_SECOND' undeclared (first use in this function)
+  XscuTimer_LoadTimer(TimerInstancePtr, One_SECOND*psb_check);
+                                        ^
+../src/lab2.c:28:2: warning: implicit declaration of function 'XscuTimer_EnableAutoReload' [-Wimplicit-function-declaration]
+  XscuTimer_EnableAutoReload(TimerInstancePtr);
+  ^
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+make: *** [src/lab2.o] ´íÎó 1
+17:18:01 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:27:2: warning: implicit declaration of function 'XscuTimer_LoadTimer' [-Wimplicit-function-declaration]
+  XscuTimer_LoadTimer(TimerInstancePtr, One_SECOND*psb_check);
+  ^
+../src/lab2.c:27:22: error: 'TimerInstancePtr' undeclared (first use in this function)
+  XscuTimer_LoadTimer(TimerInstancePtr, One_SECOND*psb_check);
+                      ^
+../src/lab2.c:27:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:27:40: error: 'One_SECOND' undeclared (first use in this function)
+  XscuTimer_LoadTimer(TimerInstancePtr, One_SECOND*psb_check);
+                                        ^
+../src/lab2.c:28:2: warning: implicit declaration of function 'XscuTimer_EnableAutoReload' [-Wimplicit-function-declaration]
+  XscuTimer_EnableAutoReload(TimerInstancePtr);
+  ^
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+make: *** [src/lab2.o] ´íÎó 1
+17:19:05 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:27:2: warning: implicit declaration of function 'XscuTimer_LoadTimer' [-Wimplicit-function-declaration]
+  XscuTimer_LoadTimer(TimerInstancePtr, psb_check);
+  ^
+../src/lab2.c:27:22: error: 'TimerInstancePtr' undeclared (first use in this function)
+  XscuTimer_LoadTimer(TimerInstancePtr, psb_check);
+                      ^
+../src/lab2.c:27:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:28:2: warning: implicit declaration of function 'XscuTimer_EnableAutoReload' [-Wimplicit-function-declaration]
+  XscuTimer_EnableAutoReload(TimerInstancePtr);
+  ^
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+make: *** [src/lab2.o] ´íÎó 1
+17:19:11 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:27:2: warning: implicit declaration of function 'XscuTimer_LoadTimer' [-Wimplicit-function-declaration]
+  XscuTimer_LoadTimer(TimerInstancePtr, *psb_check);
+  ^
+../src/lab2.c:27:22: error: 'TimerInstancePtr' undeclared (first use in this function)
+  XscuTimer_LoadTimer(TimerInstancePtr, *psb_check);
+                      ^
+../src/lab2.c:27:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:27:40: error: invalid type argument of unary '*' (have 'int')
+  XscuTimer_LoadTimer(TimerInstancePtr, *psb_check);
+                                        ^
+../src/lab2.c:28:2: warning: implicit declaration of function 'XscuTimer_EnableAutoReload' [-Wimplicit-function-declaration]
+  XscuTimer_EnableAutoReload(TimerInstancePtr);
+  ^
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+make: *** [src/lab2.o] ´íÎó 1
+17:23:55 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:38:5: warning: implicit declaration of function 'XScuTimer_Stop' [-Wimplicit-function-declaration]
+     XScuTimer_Stop(TimerInstancePtr);
+     ^
+../src/lab2.c:38:20: error: 'TimerInstancePtr' undeclared (first use in this function)
+     XScuTimer_Stop(TimerInstancePtr);
+                    ^
+../src/lab2.c:38:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+make: *** [src/lab2.o] ´íÎó 1
+17:24:21 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24152	   1152	  22628	  47932	   bb3c	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:25:16 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:25:36 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:26:32 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24152	   1152	  22628	  47932	   bb3c	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:26:44 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:34:21 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:37:5: error: 'psb_check1' undeclared (first use in this function)
+     psb_check1 = XGpio_DiscreteRead(&push, 1);
+     ^
+../src/lab2.c:37:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+make: *** [src/lab2.o] ´íÎó 1
+17:34:44 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24728	   1152	  22628	  48508	   bd7c	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:34:59 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:37:25 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24728	   1152	  22628	  48508	   bd7c	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:37:32 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:39:09 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24728	   1152	  22628	  48508	   bd7c	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:39:18 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:41:49 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24728	   1152	  22628	  48508	   bd7c	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:41:54 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:42:37 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24856	   1152	  22628	  48636	   bdfc	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:42:41 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:44:12 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25176	   1152	  22628	  48956	   bf3c	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:44:20 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:46:52 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25176	   1152	  22628	  48956	   bf3c	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:46:58 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:48:11 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25176	   1152	  22628	  48956	   bf3c	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:50:51 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25112	   1152	  22628	  48892	   befc	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:50:56 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:51:16 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25112	   1152	  22628	  48892	   befc	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:51:21 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:52:12 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/lab2.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/lab2.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/lab2.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/lab2.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25112	   1152	  22628	  48892	   befc	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:52:18 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:56:39 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+17:58:44 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+18:35:01 **** Clean-only build of configuration Debug for project Test ****
+make clean 
+rm -rf  ./src/lab2.o  ./src/lab2.d  Test.elf.size  Test.elf
+' '
+
+****  of configuration Debug for project Test ****
+
+Nothing to build for project Test
+18:35:22 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+'Finished building: ../src/trafficlight.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/trafficlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24944	   1152	  22644	  48740	   be64	Test.elf
+'Finished building: Test.elf.size'
+' '
+18:36:22 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+18:39:21 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+'Finished building: ../src/trafficlight.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/trafficlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24944	   1152	  22644	  48740	   be64	Test.elf
+'Finished building: Test.elf.size'
+' '
+18:39:37 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+18:42:02 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+'Finished building: ../src/trafficlight.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/trafficlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24944	   1152	  22644	  48740	   be64	Test.elf
+'Finished building: Test.elf.size'
+' '
+18:42:07 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+18:42:27 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+18:48:09 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+'Finished building: ../src/trafficlight.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/trafficlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24968	   1152	  22644	  48764	   be7c	Test.elf
+'Finished building: Test.elf.size'
+' '
+18:48:37 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+'Finished building: ../src/trafficlight.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/trafficlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24968	   1152	  22628	  48748	   be6c	Test.elf
+'Finished building: Test.elf.size'
+' '
+18:53:19 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+18:56:11 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+'Finished building: ../src/trafficlight.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/trafficlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24904	   1152	  22628	  48684	   be2c	Test.elf
+'Finished building: Test.elf.size'
+' '
+18:56:38 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+18:58:16 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+'Finished building: ../src/trafficlight.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/trafficlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24904	   1152	  22628	  48684	   be2c	Test.elf
+'Finished building: Test.elf.size'
+' '
+18:58:25 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+19:00:25 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+'Finished building: ../src/trafficlight.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/trafficlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24904	   1152	  22628	  48684	   be2c	Test.elf
+'Finished building: Test.elf.size'
+' '
+19:00:29 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+19:05:42 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+../src/trafficlight.c: In function 'wait_sec':
+../src/trafficlight.c:36:4: error: break statement not within loop or switch
+    break;
+    ^
+../src/trafficlight.c:43:4: error: break statement not within loop or switch
+    break;
+    ^
+../src/trafficlight.c: In function 'main':
+../src/trafficlight.c:56:3: error: 'psk_check' undeclared (first use in this function)
+   psk_check = 0;
+   ^
+../src/trafficlight.c:56:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/trafficlight.o] ´íÎó 1
+19:05:56 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+../src/trafficlight.c: In function 'wait_sec':
+../src/trafficlight.c:36:4: error: break statement not within loop or switch
+    break;
+    ^
+../src/trafficlight.c:43:4: error: break statement not within loop or switch
+    break;
+    ^
+make: *** [src/trafficlight.o] ´íÎó 1
+19:08:33 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+'Finished building: ../src/trafficlight.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/trafficlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24904	   1152	  22628	  48684	   be2c	Test.elf
+'Finished building: Test.elf.size'
+' '
+19:09:06 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+19:10:02 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+'Finished building: ../src/trafficlight.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/trafficlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24968	   1152	  22628	  48748	   be6c	Test.elf
+'Finished building: Test.elf.size'
+' '
+19:10:09 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+19:13:09 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+'Finished building: ../src/trafficlight.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/trafficlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24904	   1152	  22628	  48684	   be2c	Test.elf
+'Finished building: Test.elf.size'
+' '
+19:14:29 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+../src/trafficlight.c: In function 'wait_sec':
+../src/trafficlight.c:44:4: error: label 'L0' used but not defined
+    goto L0;
+    ^
+../src/trafficlight.c: At top level:
+../src/trafficlight.c:123:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/trafficlight.o] ´íÎó 1
+19:14:55 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+../src/trafficlight.c: In function 'wait_sec':
+../src/trafficlight.c:44:5: error: label 'L0' used but not defined
+     goto L0;
+     ^
+../src/trafficlight.c: At top level:
+../src/trafficlight.c:123:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/trafficlight.o] ´íÎó 1
+19:15:07 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+../src/trafficlight.c: In function 'wait_sec':
+../src/trafficlight.c:44:5: error: label 'L0' used but not defined
+     goto L0;
+     ^
+make: *** [src/trafficlight.o] ´íÎó 1
+19:16:00 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+../src/trafficlight.c: In function 'wait_sec':
+../src/trafficlight.c:37:5: error: label 'L0' used but not defined
+     goto L0;
+     ^
+make: *** [src/trafficlight.o] ´íÎó 1
+19:17:06 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+'Finished building: ../src/trafficlight.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/trafficlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24968	   1152	  22628	  48748	   be6c	Test.elf
+'Finished building: Test.elf.size'
+' '
+19:17:52 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+../src/trafficlight.c: In function 'wait_sec':
+../src/trafficlight.c:44:11: error: label 'L0' used but not defined
+           goto L0;
+           ^
+make: *** [src/trafficlight.o] ´íÎó 1
+19:19:54 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+'Finished building: ../src/trafficlight.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/trafficlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25864	   1152	  22628	  49644	   c1ec	Test.elf
+'Finished building: Test.elf.size'
+' '
+19:20:08 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for `all'.
+19:22:29 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Building file: ../src/trafficlight.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/trafficlight.d" -MT"src/trafficlight.d" -o "src/trafficlight.o" "../src/trafficlight.c"
+'Finished building: ../src/trafficlight.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/trafficlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25864	   1152	  22628	  49644	   c1ec	Test.elf
+'Finished building: Test.elf.size'
+' '
+14:05:15 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25112	   1152	  22628	  48892	   befc	Test.elf
+'Finished building: Test.elf.size'
+' '
+14:05:53 **** Build of project standalone_bsp_1 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project test11111 ****
+
+Nothing to build for project test11111
+14:07:15 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+../src/final_lab.c:3:19: fatal error: xutil.h: No such file or directory
+ #include "xutil.h"
+                   ^
+compilation terminated.
+make: *** [src/final_lab.o] ´íÎó 1
+14:09:02 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+../src/final_lab.c:3:19: fatal error: xutil.h: No such file or directory
+ #include "xutil.h"
+                   ^
+compilation terminated.
+make: *** [src/final_lab.o] ´íÎó 1
+14:09:12 **** Clean-only build of configuration Debug for project test11111 ****
+make clean 
+rm -rf  ./src/final_lab.o  ./src/final_lab.d  test11111.elf.size  test11111.elf
+' '
+14:09:15 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/final_lab.c'
+' '
+'Building target: test11111.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/ps7_cortexa9_0/lib -o "test11111.elf"  ./src/final_lab.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test11111.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test11111.elf  |tee "test11111.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25112	   1152	  29796	  56060	   dafc	test11111.elf
+'Finished building: test11111.elf.size'
+' '
+14:09:27 **** Incremental Build of configuration Debug for project test11111 ****
+make all 
+make: Nothing to be done for `all'.
+14:12:14 **** Incremental Build of configuration Debug for project test11111 ****
+make all 
+make: Nothing to be done for `all'.
+14:25:52 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:56:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/final_lab.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+make: *** [src/final_lab.o] ´íÎó 1
+14:26:17 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/final_lab.c'
+' '
+'Building target: test11111.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/ps7_cortexa9_0/lib -o "test11111.elf"  ./src/final_lab.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test11111.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test11111.elf  |tee "test11111.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24088	   1152	  29796	  55036	   d6fc	test11111.elf
+'Finished building: test11111.elf.size'
+' '
+14:26:55 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/final_lab.c'
+' '
+'Building target: test11111.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/ps7_cortexa9_0/lib -o "test11111.elf"  ./src/final_lab.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test11111.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test11111.elf  |tee "test11111.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24088	   1152	  29796	  55036	   d6fc	test11111.elf
+'Finished building: test11111.elf.size'
+' '
+14:28:02 **** Incremental Build of configuration Debug for project test11111 ****
+make all 
+make: Nothing to be done for `all'.
+14:44:47 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/final_lab.c'
+' '
+'Building target: test11111.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/ps7_cortexa9_0/lib -o "test11111.elf"  ./src/final_lab.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test11111.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test11111.elf  |tee "test11111.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24472	   1152	  29796	  55420	   d87c	test11111.elf
+'Finished building: test11111.elf.size'
+' '
+14:45:27 **** Incremental Build of configuration Debug for project test11111 ****
+make all 
+make: Nothing to be done for `all'.
+14:54:47 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/final_lab.c'
+' '
+'Building target: test11111.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/ps7_cortexa9_0/lib -o "test11111.elf"  ./src/final_lab.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test11111.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test11111.elf  |tee "test11111.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24664	   1152	  29796	  55612	   d93c	test11111.elf
+'Finished building: test11111.elf.size'
+' '
+14:57:04 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/final_lab.c'
+' '
+'Building target: test11111.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/ps7_cortexa9_0/lib -o "test11111.elf"  ./src/final_lab.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test11111.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test11111.elf  |tee "test11111.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24664	   1152	  29796	  55612	   d93c	test11111.elf
+'Finished building: test11111.elf.size'
+' '
+14:57:33 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/final_lab.c'
+' '
+'Building target: test11111.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/ps7_cortexa9_0/lib -o "test11111.elf"  ./src/final_lab.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test11111.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test11111.elf  |tee "test11111.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24664	   1152	  29796	  55612	   d93c	test11111.elf
+'Finished building: test11111.elf.size'
+' '
+14:58:20 **** Incremental Build of configuration Debug for project test11111 ****
+make all 
+make: Nothing to be done for `all'.
+14:59:58 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:13:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:13:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:13:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:13:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/final_lab.c'
+' '
+'Building target: test11111.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/ps7_cortexa9_0/lib -o "test11111.elf"  ./src/final_lab.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test11111.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test11111.elf  |tee "test11111.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24664	   1152	  29796	  55612	   d93c	test11111.elf
+'Finished building: test11111.elf.size'
+' '
+15:04:59 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'stop':
+../src/final_lab.c:11:40: error: 'push' undeclared (first use in this function)
+  XGpio psb_check = XGpio_DiscreteRead(&push, 1);
+                                        ^
+../src/final_lab.c:11:40: note: each undeclared identifier is reported only once for each function it appears in
+../src/final_lab.c:12:15: error: invalid operands to binary == (have 'XGpio' and 'int')
+  if(psb_check == 2)
+               ^
+../src/final_lab.c:13:3: error: break statement not within loop or switch
+   break;
+   ^
+../src/final_lab.c: In function 'reset':
+../src/final_lab.c:18:40: error: 'push' undeclared (first use in this function)
+  XGpio psb_check = XGpio_DiscreteRead(&push, 1);
+                                        ^
+../src/final_lab.c:19:15: error: invalid operands to binary == (have 'XGpio' and 'int')
+  if(psb_check == 4)
+               ^
+../src/final_lab.c:20:3: error: break statement not within loop or switch
+   break;
+   ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:27:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:27:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:27:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:27:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+make: *** [src/final_lab.o] ´íÎó 1
+15:05:40 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'stop':
+../src/final_lab.c:14:3: error: break statement not within loop or switch
+   break;
+   ^
+../src/final_lab.c: In function 'reset':
+../src/final_lab.c:22:3: error: break statement not within loop or switch
+   break;
+   ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:29:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:29:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:29:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:29:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+make: *** [src/final_lab.o] ´íÎó 1
+15:10:54 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:14:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:14:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:14:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:14:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/final_lab.c'
+' '
+'Building target: test11111.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/ps7_cortexa9_0/lib -o "test11111.elf"  ./src/final_lab.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test11111.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test11111.elf  |tee "test11111.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25496	   1152	  29796	  56444	   dc7c	test11111.elf
+'Finished building: test11111.elf.size'
+' '
+15:11:50 **** Incremental Build of configuration Debug for project test11111 ****
+make all 
+make: Nothing to be done for `all'.
+15:14:58 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:132:5: error: expected ';' before 'if'
+     if(psb_check == 4)
+     ^
+../src/final_lab.c:14:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:14:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:14:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:14:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+make: *** [src/final_lab.o] ´íÎó 1
+15:15:11 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:14:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:14:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:14:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:14:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/final_lab.c'
+' '
+'Building target: test11111.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/ps7_cortexa9_0/lib -o "test11111.elf"  ./src/final_lab.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test11111.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test11111.elf  |tee "test11111.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24216	   1152	  29796	  55164	   d77c	test11111.elf
+'Finished building: test11111.elf.size'
+' '
+15:15:44 **** Incremental Build of configuration Debug for project test11111 ****
+make all 
+make: Nothing to be done for `all'.
+15:16:45 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:14:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:14:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:14:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:14:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/final_lab.c'
+' '
+'Building target: test11111.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/ps7_cortexa9_0/lib -o "test11111.elf"  ./src/final_lab.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test11111.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test11111.elf  |tee "test11111.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24152	   1152	  29796	  55100	   d73c	test11111.elf
+'Finished building: test11111.elf.size'
+' '
+15:16:54 **** Incremental Build of configuration Debug for project test11111 ****
+make all 
+make: Nothing to be done for `all'.
+15:19:55 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:14:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:14:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:14:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:14:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/final_lab.c'
+' '
+'Building target: test11111.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/ps7_cortexa9_0/lib -o "test11111.elf"  ./src/final_lab.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test11111.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test11111.elf  |tee "test11111.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25048	   1152	  29796	  55996	   dabc	test11111.elf
+'Finished building: test11111.elf.size'
+' '
+15:20:14 **** Incremental Build of configuration Debug for project test11111 ****
+make all 
+make: Nothing to be done for `all'.
+15:21:38 **** Auto Build of configuration Debug for project test11111 ****
+make all 
+'Building file: ../src/final_lab.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/final_lab.d" -MT"src/final_lab.d" -o "src/final_lab.o" "../src/final_lab.c"
+In file included from ../src/xutil.h:112:0,
+                 from ../src/final_lab.c:3:
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_1/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/final_lab.c: In function 'main':
+../src/final_lab.c:14:50: warning: unused variable 'psb_check1' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                                  ^
+../src/final_lab.c:14:44: warning: unused variable 'find' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                                            ^
+../src/final_lab.c:14:31: warning: unused variable 'diode_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                               ^
+../src/final_lab.c:14:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check, diode_check, find, psb_check1;
+                    ^
+'Finished building: ../src/final_lab.c'
+' '
+'Building target: test11111.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/ps7_cortexa9_0/lib -o "test11111.elf"  ./src/final_lab.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test11111.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test11111.elf  |tee "test11111.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25112	   1152	  29796	  56060	   dafc	test11111.elf
+'Finished building: test11111.elf.size'
+' '
+15:21:45 **** Incremental Build of configuration Debug for project test11111 ****
+make all 
+make: Nothing to be done for `all'.

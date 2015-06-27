@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4
+# SW Build 353583 on Mon Dec  9 17:38:55 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Sat Jun 27 12:53:53 2015
+# Process ID: 5160
+# Log file: F:/beacon/vivado/lab1/lab1.runs/synth_1/design_1_wrapper.rds
+# Journal file: F:/beacon/vivado/lab1/lab1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl

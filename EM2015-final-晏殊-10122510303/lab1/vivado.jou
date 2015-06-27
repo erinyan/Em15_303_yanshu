@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2013.4
+# SW Build 353583 on Mon Dec  9 17:38:55 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Sat Jun 27 15:42:35 2015
+# Process ID: 7440
+# Log file: F:/beacon/vivado/lab1/vivado.log
+# Journal file: F:/beacon/vivado/lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:\beacon\vivado\lab1\lab1.xpr}
+launch_sdk -workspace F:/beacon/vivado/lab1/lab1.sdk/SDK/SDK_Export -hwspec F:/beacon/vivado/lab1/lab1.sdk/SDK/SDK_Export/hw/design_1.xml

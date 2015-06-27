@@ -1,0 +1,11 @@
+14:05:15 **** Auto Build of configuration Debug for project Test ****
+make all 
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25112	   1152	  22628	  48892	   befc	Test.elf
+'Finished building: Test.elf.size'
+' '
+
+14:05:18 Build Finished (took 3s.432ms)
+
